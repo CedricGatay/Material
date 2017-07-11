@@ -72,6 +72,7 @@ open class TextStorage: NSTextStorage {
 		super.init()
 	}
     
+    @available(iOS 11.0, *)
     public required init(itemProviderData data: Data, typeIdentifier: String) throws {
         try super.init(itemProviderData: data, typeIdentifier: typeIdentifier)
     }
